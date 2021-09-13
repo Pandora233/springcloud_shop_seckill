@@ -10,6 +10,7 @@ import org.apache.commons.lang.StringUtils;
 
 /**
  * 工具类，用于创建LiteJobConfiguration对象
+ * Tool class for creating LiteJobConfiguration objects
  */
 public class ElasticJobUtil {
     public static LiteJobConfiguration createJobConfiguration(final Class<? extends SimpleJob> jobClass,

@@ -16,10 +16,13 @@ import java.util.Calendar;
 import java.util.Set;
 
 /**
-
  * 用于处理用户缓存的定时任务
  * 为了保证Redis中的内存的有效使用。
  * 我们默认保留7天内的用户缓存数据，每天凌晨的时候会把7天前的用户登录缓存数据删除掉
+ * Timed tasks for processing user cache
+ * To ensure efficient use of memory in Redis.
+ * By default, we keep the user cache data within 7 days,
+ * and we delete the user login cache data before 7 days in the early hours of each day.
  */
 @Component
 @Setter@Getter
