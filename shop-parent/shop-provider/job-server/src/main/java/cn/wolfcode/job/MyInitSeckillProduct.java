@@ -26,6 +26,14 @@ public class MyInitSeckillProduct implements SimpleJob {
     @Override
     public void execute(ShardingContext shardingContext) {
         System.out.println("分片参数为"+shardingContext.getShardingParameter());
-        System.out.println("任务已经被执行了");
+        //System.out.println("任务已经被执行了");
+        doWork(shardingContext.getShardingParameter());
+    }
+
+    private void doWork(String shardingParameter) {
+        //1 远程调用秒杀服务把数据查询出来
+
+        //2 查询出来的数据放入到redis当中
+
     }
 }
